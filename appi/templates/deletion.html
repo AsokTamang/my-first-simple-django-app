@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<p>Are you sure you want to delete this data?</p>
+<ul>
+    <li>player Id:{{a.id}}</li>
+    <li>Player name:{{a.firstname}} {{a.lastname}}</li>
+    <li>player phone:{{a.phone}}</li>
+    <li>player age:{{a.age}}</li>
+    <li>player signed:{{a.signed}}</li>
+    
+
+</ul>
+<a href="{% url 'yes' a.id  %}"><button type="submit">Yes</button></a>
+<a href="{% url 'no' %}"><button type="submit">No</button></a>
+
+{% endblock %}

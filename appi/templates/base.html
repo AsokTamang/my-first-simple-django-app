@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+{% block content %}
+<ul><li><a href="{% url 'add' %}"> <button type="submit">ADD</button></a></li><!---- These urls are the links-->
+   <li> <a href="{% url 'delete' %}"><button type='submit'>DELETE</button></a></li>
+   <li> <a href="{% url 'update'  %}"><button type='submit'>UPDATE</button></a></li>
+</ul>
+
+{% endblock %}
+   
+</body>
+</html>

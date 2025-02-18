@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}\
+<form method="POST">
+    {% csrf_token %}
+    <p style="color: red;">{{a.as_p}}</p>
+    
+    
+    <button type="submit">Delete</button>
+</form>
+<a href="{% url 'base' %}"><button type="submit">Home</button></a>
+{% endblock %}
